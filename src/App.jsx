@@ -1,33 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-        </a>
+      <div className="card" >
+        <header>
+        <button>Products</button>
+        <button>Gallery</button>
+        <button>Contact</button>
+        <img src="src\img\logo_trans.png" width="100%"/>
+        </header>
+
+        <button>Privacy & Security</button>
+      <button>Legal & Trademarks</button>
+      <button>Terms of Service</button>
       </div>
-      <h1>Hyperion3D</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="read-the-docs">© 2022 Hyperion 3D Inc All Rights Reserved</p>
+     
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
